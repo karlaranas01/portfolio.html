@@ -1,0 +1,102 @@
+       body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 10;
+            text-align: center;
+            background: linear-gradient(to right, #658ab0, #7fe0ef);
+            color: white;
+        }   
+        header {
+            background: rgba(0, 206, 186, 0.8);
+            color: white;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li { 
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(254, 250, 166);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: rgb(121, 181, 230);
+        }
+        .container {
+            margin: 100px auto;
+            padding: 40px;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        img {
+    width: 180px;
+    border-radius: 0; 
+    border: 4px solid white;
+    transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .quote {
+            font-style: italic;
+            font-size: 22px;
+            margin-top: 20px;
+            color: yellow;
+            font-weight: bold;
+        }
+        .social-icons a {
+            color: white;
+            margin: 10px;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: yellow;
+        }
+        footer {
+            background: rgba(21, 33, 32, 0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            color: black;
+        }
+        table, th, td {
+            border: 2px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 80px 20px;
+                padding: 20px;
+            }
+        }
